@@ -1,6 +1,5 @@
 import {useState, useEffect} from 'react';
 import './app.css';
-import SearchIcon from './search.svg';
 import MovieCard from './moviecard';
 // 9ca92cdd
  
@@ -32,7 +31,7 @@ const App = () => {
                     onChange={(e) => SetSearchTerm(e.target.value)}
                 />
                 <img
-                    src={SearchIcon}
+                    src={require('./search.svg').default}
                     alt='search'
                     onClick={() => SearchMovie(SearchTerm)}
                 />
